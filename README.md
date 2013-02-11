@@ -22,7 +22,7 @@ Based on the [JOSS](https://github.com/java-openstack/joss) library, it has the 
 
 Usage
 -----
-'''
+```
 Usage: java -jar cloudie-0.7.0-full.jar [options]
     Options:
       -help, -?, --?
@@ -31,7 +31,7 @@ Usage: java -jar cloudie-0.7.0-full.jar [options]
          connects to the cloud. Takes 4 arguments: [AuthURL] [Tenant] [Username] [Password]
       -profile
          connects to the cloud using an previously stored profile.
-'''
+```
 
 History
 =======
