@@ -46,7 +46,7 @@ public class CloudieOperationsAsyncTest {
     @Test
     public void shouldSignalStartAndDone() throws InterruptedException {
         ops.createContainer(new ContainerSpecification("x", true), callback);
-        Thread.sleep(200L);
+        Thread.sleep(500L);
         Mockito.verify(callback, Mockito.atLeastOnce()).onStart();
         Mockito.verify(callback, Mockito.atLeastOnce()).onDone();
     }
@@ -54,7 +54,7 @@ public class CloudieOperationsAsyncTest {
     @Test
     public void shouldSignalCommandException() throws InterruptedException {
         ops.createStoredObjects(account.getContainer("x"), new File[] { new File("pom.xml") }, callback); // container does not exist.
-        Thread.sleep(200L);
+        Thread.sleep(500L);
         Mockito.verify(callback, Mockito.atLeastOnce()).onStart();
         Mockito.verify(callback, Mockito.atLeastOnce()).onError(Mockito.any(CommandException.class));
         Mockito.verify(callback, Mockito.atLeastOnce()).onDone();
