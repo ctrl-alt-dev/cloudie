@@ -9,7 +9,7 @@
 
     <groupId>nl.tweeenveertig.cloudie</groupId>
     <artifactId>cloudie</artifactId>
-    <version>0.7.0</version>
+    <version>0.7.1</version>
     <packaging>jar</packaging>
     <name>Cloudie - an Open Stack Storage browser</name>
     <description>Cloudie is a simple user interface to browse Open Stack Storage and to manipulate it.</description>
@@ -35,7 +35,7 @@
     </developers>
 
     <properties>
-        <joss.version>0.7.0</joss.version>
+        <joss.version>0.7.1</joss.version>
         <jcommander.version>1.30</jcommander.version>
         <junit.version>4.10</junit.version>
         <mockito.version>1.9.0</mockito.version>
@@ -44,7 +44,7 @@
     <dependencies>
         <!-- Open Stack -->
         <dependency>
-            <groupId>nl.tweeenveertig.openstack</groupId>
+            <groupId>org.javaswift</groupId>
             <artifactId>joss</artifactId>
             <version>${joss.version}</version>
         </dependency>

@@ -19,10 +19,10 @@ import java.io.File;
 
 import nl.tweeenveertig.cloudie.ops.CloudieOperations.CloudieCallback;
 import nl.tweeenveertig.cloudie.util.AsyncWrapper;
-import nl.tweeenveertig.openstack.client.mock.ClientMock;
-import nl.tweeenveertig.openstack.exception.CommandException;
-import nl.tweeenveertig.openstack.model.Account;
 
+import org.javaswift.joss.client.mock.ClientMock;
+import org.javaswift.joss.exception.CommandException;
+import org.javaswift.joss.model.Account;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -53,7 +53,10 @@ public class CloudieOperationsAsyncTest {
 
     @Test
     public void shouldSignalCommandException() throws InterruptedException {
-        ops.createStoredObjects(account.getContainer("x"), new File[] { new File("pom.xml") }, callback); // container does not exist.
+        ops.createStoredObjects(account.getContainer("x"), new File[] { new File("pom.xml") }, callback); // container
+                                                                                                          // does
+                                                                                                          // not
+                                                                                                          // exist.
         Thread.sleep(500L);
         Mockito.verify(callback, Mockito.atLeastOnce()).onStart();
         Mockito.verify(callback, Mockito.atLeastOnce()).onError(Mockito.any(CommandException.class));

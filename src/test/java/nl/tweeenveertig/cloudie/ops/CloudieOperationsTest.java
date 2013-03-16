@@ -22,11 +22,11 @@ import java.io.File;
 import java.util.Collections;
 
 import nl.tweeenveertig.cloudie.ops.CloudieOperations.CloudieCallback;
-import nl.tweeenveertig.openstack.client.mock.ClientMock;
-import nl.tweeenveertig.openstack.model.Account;
-import nl.tweeenveertig.openstack.model.Container;
-import nl.tweeenveertig.openstack.model.StoredObject;
 
+import org.javaswift.joss.client.mock.ClientMock;
+import org.javaswift.joss.model.Account;
+import org.javaswift.joss.model.Container;
+import org.javaswift.joss.model.StoredObject;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

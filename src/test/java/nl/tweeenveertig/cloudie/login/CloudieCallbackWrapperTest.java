@@ -18,10 +18,10 @@ package nl.tweeenveertig.cloudie.login;
 import java.util.ArrayList;
 
 import nl.tweeenveertig.cloudie.ops.CloudieOperations.CloudieCallback;
-import nl.tweeenveertig.openstack.exception.CommandException;
-import nl.tweeenveertig.openstack.model.Container;
-import nl.tweeenveertig.openstack.model.StoredObject;
 
+import org.javaswift.joss.exception.CommandException;
+import org.javaswift.joss.model.Container;
+import org.javaswift.joss.model.StoredObject;
 import org.junit.Test;
 import org.mockito.Mockito;
 

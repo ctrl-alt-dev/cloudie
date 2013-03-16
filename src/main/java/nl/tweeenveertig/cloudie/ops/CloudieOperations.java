@@ -19,20 +19,22 @@ import java.io.File;
 import java.util.Collection;
 import java.util.List;
 
-import nl.tweeenveertig.openstack.exception.CommandException;
-import nl.tweeenveertig.openstack.model.Container;
-import nl.tweeenveertig.openstack.model.StoredObject;
+import org.javaswift.joss.exception.CommandException;
+import org.javaswift.joss.model.Container;
+import org.javaswift.joss.model.StoredObject;
 
 /**
- * CloudieOperations, these are operations the user interface can perform. All methods take a CloudieCallback as last
- * argument, which will be called during the (asynchronous) execution of the operation.
+ * CloudieOperations, these are operations the user interface can perform. All
+ * methods take a CloudieCallback as last argument, which will be called during
+ * the (asynchronous) execution of the operation.
  * 
  * @author E.Hooijmeijer
  */
 public interface CloudieOperations {
 
     /**
-     * callback interface, CloudieOperations will use this to notify the user interface of updates.
+     * callback interface, CloudieOperations will use this to notify the user
+     * interface of updates.
      */
     public interface CloudieCallback {
 
@@ -42,7 +44,8 @@ public interface CloudieOperations {
         void onStart();
 
         /**
-         * signals the end of an operation. Its always called if onStart() was called first.
+         * signals the end of an operation. Its always called if onStart() was
+         * called first.
          */
         void onDone();
 
@@ -62,16 +65,16 @@ public interface CloudieOperations {
          * signals an updated of the available stored objects.
          * @param storedObjects the containers.
          */
-        //void onUpdateStoredObjects(Collection<StoredObject> storedObjects);
+        // void onUpdateStoredObjects(Collection<StoredObject> storedObjects);
 
         /**
-         * called when a new list of objects starts.
-         * followed by at least one call to onAppendStoredObjects.
+         * called when a new list of objects starts. followed by at least one
+         * call to onAppendStoredObjects.
          */
         void onNewStoredObjects();
 
         /**
-         * appends newly loaded objects to the list. 
+         * appends newly loaded objects to the list.
          * @param container the container to which the objects belong.
          * @param page the page.
          * @param storedObjects the objects.
@@ -196,7 +199,7 @@ public interface CloudieOperations {
 
     /**
      * retrieves metadata for the given container.
-     * @param c the container. 
+     * @param c the container.
      * @param callback the callback when done.
      */
     void getMetadata(Container c, CloudieCallback callback);

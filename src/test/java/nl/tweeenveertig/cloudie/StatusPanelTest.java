@@ -21,9 +21,9 @@ import java.util.List;
 
 import nl.tweeenveertig.cloudie.ops.CloudieOperations;
 import nl.tweeenveertig.cloudie.ops.CloudieOperations.CloudieCallback;
-import nl.tweeenveertig.openstack.model.Container;
-import nl.tweeenveertig.openstack.model.StoredObject;
 
+import org.javaswift.joss.model.Container;
+import org.javaswift.joss.model.StoredObject;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -31,7 +31,7 @@ import org.mockito.Mockito;
 /**
  * StatusPaneltest.
  * @author E.Hooijmeijer
- *
+ * 
  */
 public class StatusPanelTest {
 

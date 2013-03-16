@@ -79,15 +79,15 @@ import nl.tweeenveertig.cloudie.util.GuiTreadingUtils;
 import nl.tweeenveertig.cloudie.util.LabelComponentPanel;
 import nl.tweeenveertig.cloudie.util.PopupTrigger;
 import nl.tweeenveertig.cloudie.util.ReflectionAction;
-import nl.tweeenveertig.openstack.client.impl.ClientImpl;
-import nl.tweeenveertig.openstack.exception.CommandException;
-import nl.tweeenveertig.openstack.model.Container;
-import nl.tweeenveertig.openstack.model.StoredObject;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.PoolingClientConnectionManager;
+import org.javaswift.joss.client.impl.ClientImpl;
+import org.javaswift.joss.exception.CommandException;
+import org.javaswift.joss.model.Container;
+import org.javaswift.joss.model.StoredObject;
 
 import com.beust.jcommander.ParameterException;
 
@@ -154,7 +154,8 @@ public class CloudiePanel extends JPanel implements CloudieOperations.CloudieCal
     }
 
     /**
-     * creates Cloudie and immediately logs in using the given previously stored profile.
+     * creates Cloudie and immediately logs in using the given previously stored
+     * profile.
      * @param profile the profile.
      */
     public CloudiePanel(String profile) {

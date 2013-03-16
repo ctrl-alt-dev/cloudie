@@ -20,11 +20,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import nl.tweeenveertig.openstack.model.Account;
-import nl.tweeenveertig.openstack.model.Client;
-import nl.tweeenveertig.openstack.model.Container;
-import nl.tweeenveertig.openstack.model.PaginationMap;
-import nl.tweeenveertig.openstack.model.StoredObject;
+import org.javaswift.joss.model.Account;
+import org.javaswift.joss.model.Client;
+import org.javaswift.joss.model.Container;
+import org.javaswift.joss.model.PaginationMap;
+import org.javaswift.joss.model.StoredObject;
 
 /**
  * CloudyOperationsImpl.

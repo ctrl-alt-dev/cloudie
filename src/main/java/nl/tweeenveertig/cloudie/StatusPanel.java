@@ -30,13 +30,14 @@ import javax.swing.JPanel;
 
 import nl.tweeenveertig.cloudie.ops.CloudieOperations;
 import nl.tweeenveertig.cloudie.ops.CloudieOperations.CloudieCallback;
-import nl.tweeenveertig.openstack.model.Container;
-import nl.tweeenveertig.openstack.model.StoredObject;
+
+import org.javaswift.joss.model.Container;
+import org.javaswift.joss.model.StoredObject;
 
 /**
- * Status panel is the bottom part of the user interface.
- * It shows details about the current selected container,
- * the current selected Stored Objects and the busy status.
+ * Status panel is the bottom part of the user interface. It shows details about
+ * the current selected container, the current selected Stored Objects and the
+ * busy status.
  * @author E.Hooijmeijer
  */
 public class StatusPanel extends JPanel {

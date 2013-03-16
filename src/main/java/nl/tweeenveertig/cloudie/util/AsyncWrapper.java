@@ -22,7 +22,8 @@ import java.lang.reflect.Proxy;
 
 import nl.tweeenveertig.cloudie.ops.CloudieOperations;
 import nl.tweeenveertig.cloudie.ops.CloudieOperations.CloudieCallback;
-import nl.tweeenveertig.openstack.exception.CommandException;
+
+import org.javaswift.joss.exception.CommandException;
 
 /**
  * AsyncWrapper, wraps cloudie operations to make it asynchronous.
