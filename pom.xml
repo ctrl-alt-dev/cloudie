@@ -7,7 +7,7 @@
         <version>7</version>
     </parent>
 
-    <groupId>nl.tweeenveertig.cloudie</groupId>
+    <groupId>org.javaswift.cloudie</groupId>
     <artifactId>cloudie</artifactId>
     <version>0.7.1</version>
     <packaging>jar</packaging>
@@ -105,7 +105,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>false</addClasspath>
-                            <mainClass>nl.tweeenveertig.cloudie.Main</mainClass>
+                            <mainClass>org.javaswift.cloudie.Main</mainClass>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries> 
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries> 
                         </manifest>
